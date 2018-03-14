@@ -1,0 +1,23 @@
+service: openwhisk-alarms
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+provider:
+  name: openwhisk
+  runtime: nodejs:default
+  ignore_certs: true
+  defaultService: openwhisk-alarms
+
+plugins:
+  - serverless-openwhisk
+  - serverless-webpack
+
+functions:
+  alarmWebAction:
+    name: alarmWebAction
+    handler: action/alarmWebAction.main
+    annotations:
+      web-export: true
