@@ -16,9 +16,15 @@
     "json-stringify-safe": "^5.0.1",
     "http-status-codes": "^1.0.5",
     "request-promise": "^1.0.2",
-    "redis":"^2.7.1",
+    "redis": "^2.7.1",
     "bluebird": "^3.5.0",
     "systeminformation": "^3.19.0",
     "long-timeout": "^0.1.1"
+  },
+  "devDependencies": {
+    "serverless": "1.26.0",
+    "serverless-openwhisk": "0.10.1",
+    "serverless-webpack": "4.3.0",
+    "webpack": "4.0.1"
   }
 }
